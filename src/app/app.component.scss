@@ -1,0 +1,22 @@
+footer nav {
+  position: fixed;
+  bottom: 0;
+
+  height: 15rem;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+footer nav div {
+  padding: 1rem;
+  width: 50%;
+  height: 100%;
+  margin-bottom: 0;
+  label {
+    padding: 0;
+  }
+}
