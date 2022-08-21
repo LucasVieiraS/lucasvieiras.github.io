@@ -1,41 +1,73 @@
 <header>
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="/"><img src="../assets/personal-logo-scaled.png" id="personal-logo-navbar" width="40" height="32" class="d-block me-2" role="img"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" routerLink="about-me">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" routerLink="projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" routerLink="extra">EXTRA</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div>
     </div>
   </nav>
 </header>
 
 <section>
-  <main class="container">
-    <app-about-me></app-about-me>
-    <app-projects></app-projects>
-    <app-extra></app-extra>
-  </main>
+  <app-about-me></app-about-me>
+  <hr style="margin-top: -1px;">
+  <app-projects></app-projects>
+  <hr>
+  <app-extra></app-extra>
 </section>
 
 <footer>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a href="https://github.com/LucasVieiraS">Github</a>
-    </div>
-    <div class="container-fluid">
+  <hr>
+  <div class="container py-5">
+    <div class="row">
+      <h5><i class="fa-solid fa-envelope"></i> LET'S WORK TOGETHER</h5>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="username@example.com">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hello Lucas! I'm contacting you for..."></textarea>
       </div>
     </div>
-  </nav>
+  </div>
+  <hr>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Lucas Vieira da Silva Logo">
+          <img src="../assets/personal-logo-scaled.png" id="personal-logo" width="40" height="32" class="d-block me-2" role="img"><title>Bootstrap</title>
+          <span class="fs-5">Lucas Vieira da Silva <strong>© 2022</strong></span>
+        </a>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">Licensed by <a href="https://github.com/LucasVieiraS/LucasVieiraS.github.io/blob/master/LICENSE.md" target="_blank" rel="license noopener">MIT</a>.</li>
+          <li class="mb-2"><a href="https://github.com/LucasVieiraS/LucasVieiraS.github.io" target="_blank" rel="github noopener">Github Repository</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-7 mb-3">
+        <h5><i class="fa-solid fa-bookmark"></i> CONTACT</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/LucasVieiraS"><i class="fa-brands fa-github"></i>Github</a></li>
+          <li class="mb-2"><a href="https://www.linkedin.com/in/LucasVieiraSilva/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </footer>

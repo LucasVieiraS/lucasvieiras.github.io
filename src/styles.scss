@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  min-height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  color: rgb(145, 86, 255);
+  transition: 0.2s ease-in;
+}
+
+a:hover {
+  color: rgb(66, 35, 124);
+}
+
+#special-line {
+  display: block;
+  width: 5%;
+  margin:auto
+}
+
+.noselect {
+  user-select: none;
+}
+

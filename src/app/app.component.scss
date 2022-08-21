@@ -2,7 +2,7 @@ footer nav {
   position: fixed;
   bottom: 0;
 
-  height: 15rem;
+  height: 10rem;
   width: 100vw;
 
   display: flex;
@@ -19,4 +19,16 @@ footer nav div {
   label {
     padding: 0;
   }
+}
+
+#personal-logo {
+  filter: invert(1);
+}
+
+.badge {
+  color: black;
+}
+
+li i {
+  margin-right: 5px;
 }
