@@ -2,6 +2,7 @@
 body {
   min-height: 100%;
   font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  transition: 0.3s ease-in;
 }
 
 a {
@@ -23,3 +24,6 @@ a:hover {
   user-select: none;
 }
 
+.stretch-button {
+  width: 100%;
+}

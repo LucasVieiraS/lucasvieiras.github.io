@@ -1,1 +1,26 @@
-<p>projects works!</p>
+<div class="container py-5">
+  <div class="row">
+    <h5><i class="fa-solid fa-trophy"></i> PROJECTS</h5>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-1">
+      <div class="col" *ngFor="let item of repositories">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{item.image}};'); background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><i [ngClass]="item.logo" style="color: white;"></i>{{item.name}}</h2>
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1">{{item.description}}</h4>
+
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <a href="https://github.com/LucasVieiraS/Machinery"><i class="fa-brands fa-github project-title-icon"></i></a>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fa-solid fa-arrow-rotate-right bi me-2" width="1em" height="1em"></i>
+                <small><strong>LAST COMMIT:</strong> {{item.last_commit}}</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

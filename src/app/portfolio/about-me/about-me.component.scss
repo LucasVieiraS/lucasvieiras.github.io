@@ -77,12 +77,15 @@ header.masthead .bg-circle-4 {
 /* Typewriter Label */
 #nameLabel {
   position: relative;
-  top: 50%;
-  margin: 0 auto;
+  top: -4rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);
 }
 
 /* Animation */
