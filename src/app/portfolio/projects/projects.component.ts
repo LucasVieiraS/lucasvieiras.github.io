@@ -17,24 +17,6 @@ export class ProjectsComponent implements OnInit {
       last_commit: '???',
       main_branch: 'main',
     },
-    {
-      name: 'Guess the Flag!',
-      description: 'Simple fun game where your goal is to guess the flag.',
-      logo: 'fa-solid fa-globe',
-      image: 'https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
-      repository: 'https://github.com/LucasVieiraS/GuessTheFlag',
-      last_commit: '???',
-      main_branch: 'main',
-    },
-    {
-      name: 'Machinery',
-      description: 'Discord bot that assists in automation.',
-      logo: 'fa-brands fa-discord',
-      image: 'https://github.com/LucasVieiraS/Machinery/blob/main/src/img/logo.png?raw=true',
-      repository: 'https://github.com/LucasVieiraS/Machinery',
-      last_commit: '???',
-      main_branch: 'main',
-    },
   ]
 
   constructor() { }
