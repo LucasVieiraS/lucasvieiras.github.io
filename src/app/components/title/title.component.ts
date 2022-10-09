@@ -9,6 +9,7 @@ export class TitleComponent implements OnInit {
 
   @Input()
   title: string = "TITLE UNAVAILABLE";
+  @Input()
   icon: string = "fa-trophy";
 
   constructor() { }

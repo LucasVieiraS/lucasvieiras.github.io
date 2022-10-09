@@ -13,7 +13,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { TitleComponent } from './components/title/title.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastComponent } from './components/toast/toast.component';
+import { ToastsComponent } from './portfolio/toasts/toasts.component';
+import { EventEmitterService } from './services/event-emitter.service';
 
 @NgModule({
   declarations: [
@@ -25,15 +28,18 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     ProjectCardComponent,
-    TitleComponent
+    TitleComponent,
+    ToastComponent,
+    ToastsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [EventEmitterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
