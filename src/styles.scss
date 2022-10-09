@@ -1,29 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+
 body {
   min-height: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
   transition: 0.3s ease-in;
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
   color: rgb(145, 86, 255);
-  transition: 0.2s ease-in;
+  text-decoration: none;
+  transition: 0.15s ease-in;
 }
 
 a:hover {
   color: rgb(66, 35, 124);
 }
 
-#special-line {
-  display: block;
-  width: 5%;
-  margin:auto
-}
-
-.noselect {
+.no-select {
   user-select: none;
-}
-
-.stretch-button {
-  width: 100%;
 }

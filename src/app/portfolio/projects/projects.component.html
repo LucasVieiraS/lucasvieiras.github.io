@@ -1,30 +1,16 @@
 <div class="container py-5">
   <div class="row">
-    <h5><i class="fa-solid fa-trophy"></i> PROJECTS</h5>
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-1">
-      <div class="col" *ngFor="let item of repositories">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{item.image}};'); background-size: cover; background-repeat: no-repeat;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <ul class="d-flex list-unstyled mt-auto flex-column">
-              <li class="me-auto">
-                  <h2 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-bold"><i [ngClass]="item.logo" style="color: white;"></i>{{item.name}}</h2>
-              </li>
-              <li class="me-auto">
-                <h4 class="mb-4 display-12 lh-1">{{item.description}}</h4>
-              </li>
-            </ul>
-            <ul class="d-flex list-unstyled mt-auto" style="margin-bottom: 5rem;">
-              <li class="me-auto">
-                <a href="https://github.com/LucasVieiraS/Machinery"><i class="fa-brands fa-github project-title-icon"></i></a>
-              </li>
-              <li class="d-flex align-items-center">
-                <i class="fa-solid fa-arrow-rotate-right bi me-2" width="1em" height="1em"></i>
-                <small><strong>VERSION:</strong> {{item.version}}</small>
-              </li>
-            </ul>
-          </div>
+    <app-title icon="fa-trophy" title="PROJECTS"></app-title>
+    <div class="row">
+        <div class="col mb-3" *ngFor="let repositoryInformation of repositoryData">
+          <app-project-card
+            [projectTitle]="repositoryInformation.name"
+            [projectDescription]="repositoryInformation.description"
+            [projectImage]="repositoryInformation.image"
+            [projectRepository]="repositoryInformation.link"
+          >
+          </app-project-card>
         </div>
-      </div>
     </div>
   </div>
 </div>

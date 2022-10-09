@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Repository } from 'src/app/models/repository';
+import { RepositoryService } from 'src/app/services/repository.service';
 
 @Component({
   selector: 'app-projects',
@@ -7,41 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  repositories = [
-    {
-      name: 'Machinery',
-      description: 'Discord bot that assists in automation.',
-      logo: 'fa-brands fa-discord',
-      image: 'https://github.com/LucasVieiraS/Machinery/blob/main/src/img/logo.png?raw=true',
-      repository: 'https://github.com/LucasVieiraS/Machinery',
-      version: 'v2.0',
-      main_branch: 'main',
-    },
-  ]
+  repositoryData: any;
 
-  constructor() { }
-
-  getLastestCommit(data : any) {
-    let repositoryUrl : string = data.repository;
-    let main_branch : string = data.main_branch;
-    fetch(
-      `${repositoryUrl}/branches/${main_branch}`
-    )
-      .then(response => {
-        response.json().then(json => {
-          console.log(json);
-          this.repositories[this.repositories.indexOf(data)].version = json.commit.commit.author.date
-        });
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  }
+  constructor(private repositoryService: RepositoryService) { }
 
   ngOnInit(): void {
-    /*this.repositories.forEach((data) => {
-      this.getLastestCommit(data);
-    })*/
+    this.repositoryService.getPinnedRepositories().subscribe(data => {
+      this.repositoryData = data;
+      console.log(this.repositoryData)
+    });
   }
 
 }

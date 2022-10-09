@@ -1,0 +1,18 @@
+<div class="container py-5">
+  <div class="row">
+    <app-title icon="fa-envelope" title="LET'S WORK TOGETHER"></app-title>
+    <form class="row" formGroupName="emailForm">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" style="font-weight: 500;" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" style="font-weight: 500;" id="message" rows="3" placeholder="Hey Lucas! We'd like you to join our team..."></textarea>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3" (click)="onSubmit()">Send Mail</button>
+      </div>
+    </form>
+  </div>
+</div>
