@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PortfolioService } from './portfolio.service';
+import { EventEmitterService } from './event-emitter.service';
 
-describe('PortfolioService', () => {
-  let service: PortfolioService;
+describe('EventEmitterService', () => {
+  let service: EventEmitterService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(PortfolioService);
+    service = TestBed.inject(EventEmitterService);
   });
 
   it('should be created', () => {

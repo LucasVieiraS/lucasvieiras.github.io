@@ -1,0 +1,16 @@
+.title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title-text {
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+.title-icon {
+  margin-top: 0.1rem;
+  text-align: center;
+}

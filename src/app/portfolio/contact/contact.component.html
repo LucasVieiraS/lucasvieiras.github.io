@@ -1,0 +1,21 @@
+<div class="container py-5">
+  <div class="row">
+    <app-title icon="fa-envelope" title="LET'S WORK TOGETHER"></app-title>
+    <form class="row needs-validation" novalidate [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3 form-group">
+        <label for="email" class="form-label">E-mail address</label>
+        <input type="email" class="form-control is-required"  style="font-weight: 500;" name="email"
+          formControlName="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3 form-group">
+        <label for="message is-required" class="form-label">Message</label>
+        <textarea class="form-control is-required has-validation" style="font-weight: 500;" required name="message"
+          formControlName="message" id="message" rows="3"
+          placeholder="Hey Lucas! We'd like you to join our team..."></textarea>
+      </div>
+      <div class="col-auto form-group">
+        <button type="submit" class="btn btn-primary mb-3">SEND MAIL</button>
+      </div>
+    </form>
+  </div>
+</div>

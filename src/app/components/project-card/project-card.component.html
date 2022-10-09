@@ -1,0 +1,9 @@
+<div class="card" style="width: 36rem; height: 100%">
+  <img [src]="projectImage" class="card-img-top" [alt]="projectDescription">
+  <div class="card-body">
+    <h5 class="card-title">{{ projectTitle }}</h5>
+    <p class="card-text">{{ projectDescription }}</p>
+    <a [href]="projectRepository" target="_blank" rel="noopener noreferrer" class="btn btn-primary">REPOSITORY</a>
+    <a *ngIf="projectDemo" [href]="projectDemo" target="_blank" rel="noopener noreferrer" class="btn btn-primary m-lg-2">DEMO</a>
+  </div>
+</div>

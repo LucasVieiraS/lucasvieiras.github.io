@@ -1,0 +1,5 @@
+<div>
+  <div *ngFor="let toasts of toastData">
+    <app-toast *ngIf="toasts.visible" [message]="toasts.message" [title]="toasts.title"></app-toast>
+  </div>
+</div>
