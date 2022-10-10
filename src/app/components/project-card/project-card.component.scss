@@ -1,0 +1,12 @@
+.card {
+  min-width: 12rem;
+  max-width: 36rem;
+  width: auto;
+  height: 100%
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 100vw;
+  }
+}
