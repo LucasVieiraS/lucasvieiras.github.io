@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastComponent } from './components/toast/toast.component';
 import { ToastsComponent } from './portfolio/toasts/toasts.component';
 import { EventEmitterService } from './services/event-emitter.service';
+import { ThemeSwitchComponent } from './components/theme-switch/theme-switch.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { EventEmitterService } from './services/event-emitter.service';
     ProjectCardComponent,
     TitleComponent,
     ToastComponent,
-    ToastsComponent
+    ToastsComponent,
+    ThemeSwitchComponent
   ],
   imports: [
     BrowserModule,

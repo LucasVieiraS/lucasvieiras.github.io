@@ -1,3 +1,2 @@
-## Lucas Vieira da Silva
-### [Personal Portfolio](https://lucasvieiras.github.io/)
-### Licensed by MIT.
+## Lucas Vieira's Portfolio
+[Portfolio Live](https://lucasvieiras.github.io/)

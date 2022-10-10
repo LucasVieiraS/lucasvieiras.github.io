@@ -23,6 +23,7 @@ header.masthead .masthead-content .masthead-heading {
 
 header.masthead .masthead-content .masthead-subheading {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 header.masthead .bg-circle {
@@ -76,9 +77,10 @@ header.masthead .bg-circle-4 {
 #nameLabel {
   position: relative;
   top: -4rem;
-  position: absolute;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+
   left: 0;
   right: 0;
   text-align: center;
@@ -87,15 +89,27 @@ header.masthead .bg-circle-4 {
 }
 
 .anim-typewriter{
+  max-width: 20em;
   animation: typewriter 4s steps(120) .3s 1 normal both, blinkcursor 500ms steps(120) infinite normal;
 }
 
+@media only screen and (max-width: 600px) {
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 2rem;
+  }
+}
+
+
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 90vw;}
 }
 
 @keyframes blinkcursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
+}
+
+.masthead-content {
+  margin-top: 10rem;
 }

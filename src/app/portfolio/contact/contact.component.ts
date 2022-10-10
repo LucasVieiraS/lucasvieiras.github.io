@@ -19,10 +19,16 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     if (this.emailForm.valid) {
-      const email = this.emailForm.value;
+      const emailData = this.emailForm.value;
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+      const email = emailData.email || "";
+      const message = emailData.message || "";
+      if (email.length < 5 || message.length < 5) {
+        this.eventEmitterService.emitToast("Failed!", "Input is not long enough.")
+        return;
+      }
       this.http.post('https://formspree.io/f/xnqrzqvg',
-        { 'email address': email.email, message: email.message },
+        { 'email address': email, message: message },
         { 'headers': headers }).subscribe(
           response => {
             console.log(response);

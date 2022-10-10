@@ -16,7 +16,6 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.repositoryService.getPinnedRepositories().subscribe(data => {
       this.repositoryData = data;
-      console.log(this.repositoryData)
     });
   }
 

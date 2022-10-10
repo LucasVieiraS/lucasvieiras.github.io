@@ -22,3 +22,26 @@ a:hover {
 .no-select {
   user-select: none;
 }
+
+#background {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.dark {
+  filter: invert(1) !important;
+  -webkit-filter: invert(1) !important;
+}
+
+.light {
+  filter: invert(0) !important;
+  -webkit-filter: invert(0) !important;
+}
+
+.dark-link {
+  filter: invert(1);
+  -webkit-filter: invert(.5);
+}

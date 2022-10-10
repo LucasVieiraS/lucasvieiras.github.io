@@ -1,0 +1,23 @@
+i {
+  margin-left: 0.35rem;
+  font-size: 1.5rem;
+  margin-top: 0.20rem;
+}
+
+.fa-moon {
+  filter: invert(0) !important;
+  -webkit-filter: invert(0) !important;
+}
+
+.form-check-input {
+  filter: invert(0) !important;
+  -webkit-filter: invert(0) !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .form-switch {
+    position: absolute;
+    left: 50rem;
+  }
+}
+
