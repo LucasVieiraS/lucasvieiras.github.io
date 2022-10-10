@@ -28,17 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              {
-                "input": "src/light.scss",
-                "bundleName": "light",
-                "inject": true
-              },
-              {
-                "input": "src/dark.scss",
-                "bundleName": "dark",
-                "inject": false
-              }
+              "src/styles.scss"
             ],
             "scripts": []
           },
