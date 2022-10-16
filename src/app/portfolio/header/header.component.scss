@@ -91,11 +91,12 @@ header.masthead .bg-circle-4 {
 .anim-typewriter{
   max-width: 20em;
   animation: typewriter 4s steps(120) .3s 1 normal both, blinkcursor 500ms steps(120) infinite normal;
+  -webkit-animation: typewriter 4s steps(120) .3s 1 normal both, blinkcursor 500ms steps(120) infinite normal;
 }
 
 @media only screen and (max-width: 600px) {
   header.masthead .masthead-content .masthead-heading {
-    font-size: 2rem;
+    font-size: 7vw;
   }
 }
 

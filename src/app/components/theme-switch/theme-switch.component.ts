@@ -12,6 +12,9 @@ export class ThemeSwitchComponent implements OnInit {
   classesToBeUpdated = [
     'title-text',
     'fa-solid',
+    'fa-trophy',
+    'fa-book',
+    'fa-envelope',
     'form-label',
     'list-unstyled',
     'licensed',
@@ -48,8 +51,13 @@ export class ThemeSwitchComponent implements OnInit {
     const appRoot = document.getElementsByTagName('app-root')
     const backgroundElement: HTMLElement | any = document.getElementById("background");
     appRoot[0].append(backgroundElement);
-    this.updateTheme();
     this.icon = this.theme.current == "light" && "sun" || "moon";
+    setTimeout(() => {
+      this.updateTheme();
+    }, 200);
+    setTimeout(() => {
+      this.updateTheme();
+    }, 1500);
   }
 
 }

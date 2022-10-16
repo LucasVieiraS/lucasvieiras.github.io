@@ -15,8 +15,9 @@ export class ThemeService {
   }
 
   constructor() {
-    if (localStorage.getItem('theme') !== undefined) {
-      this.current;
+    let savedTheme: string | any = localStorage.getItem('theme')
+    if (savedTheme !== undefined) {
+      this.default = savedTheme;
     }
   }
 }
