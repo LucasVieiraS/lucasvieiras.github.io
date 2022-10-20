@@ -54,13 +54,15 @@ export class ThemeSwitchComponent implements OnInit {
     this.theme.current = themeFix
     appRoot[0].append(backgroundElement);
     this.icon = this.theme.current == "light" && "sun" || "moon";
-    console.log(this.icon)
     setTimeout(() => {
       this.updateTheme();
     }, 200);
     setTimeout(() => {
       this.updateTheme();
     }, 1500);
+    setTimeout(() => {
+      this.updateTheme();
+    }, 5000);
   }
 
 }
