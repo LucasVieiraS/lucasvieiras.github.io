@@ -18,6 +18,8 @@ export class ThemeService {
     let savedTheme: string | any = localStorage.getItem('theme')
     if (savedTheme !== undefined) {
       this.default = savedTheme;
+    } else {
+      localStorage.setItem('theme', this.default)
     }
   }
 }
