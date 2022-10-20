@@ -50,8 +50,11 @@ export class ThemeSwitchComponent implements OnInit {
   ngOnInit(): void {
     const appRoot = document.getElementsByTagName('app-root')
     const backgroundElement: HTMLElement | any = document.getElementById("background");
+    var themeFix = localStorage.getItem('theme') || "light"
+    this.theme.current = themeFix
     appRoot[0].append(backgroundElement);
     this.icon = this.theme.current == "light" && "sun" || "moon";
+    console.log(this.icon)
     setTimeout(() => {
       this.updateTheme();
     }, 200);
