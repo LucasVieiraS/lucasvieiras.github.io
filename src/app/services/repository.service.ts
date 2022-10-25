@@ -12,7 +12,7 @@ export class RepositoryService {
   constructor(private http: HttpClient) { }
 
   getPinnedRepositories() {
-    const url = "https://gh-pinned-repos.egoist.sh/?username=LucasVieiraS"
+    const url = "https://gh-pinned-repos.egoist.dev/?username=lucasvieiras"
     return this.http.get<Repository>(url).pipe(
       map(return_ => return_),
       catchError(async (error) => console.log(error))
