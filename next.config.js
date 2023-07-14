@@ -14,11 +14,11 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  i18n: {
+  /*i18n: {
     locales: ['en-US', 'pt-BR'],
     defaultLocale: 'en-US',
     localeDetection: true,
-  },
+  },*/
   trailingSlash: true,
   //output: "export",
   reactStrictMode: true,
