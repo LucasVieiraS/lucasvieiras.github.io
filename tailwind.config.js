@@ -2,11 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './src/(pages)/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-    "app/**/*.{ts,tsx}",
-
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
     container: {
@@ -17,12 +16,8 @@ module.exports = {
       },
     },
     extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: '90%', // add required value here
-          }
-        }
+      backgroundImage: {
+        'main': "url('/blur.png')",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -59,6 +54,11 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -75,5 +75,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography'),
+  ],
 }
