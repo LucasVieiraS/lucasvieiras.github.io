@@ -40,14 +40,14 @@ export default function Home() {
             <div className="p-8 md:p-24 pb-18 h-full">
               <h2>Who am I?</h2>
               <p className="prose-xl">
-                My name is{" "}
+                My name is
                 <span className="font-bold">Lucas Vieira da Silva</span>
               </p>
               <p>
-                I'm a full-stack software engineer from São Paulo, Brazil. My
-                technology stack consists of basically{" "}
-                <span className="font-semibold">Java</span>,{" "}
-                <span className="font-semibold">Angular</span> and{" "}
+                I&apos;m a full-stack software engineer from São Paulo, Brazil. My
+                technology stack consists of basically
+                <span className="font-semibold">Java</span>,
+                <span className="font-semibold">Angular</span> and
                 <span className="font-semibold">React</span>.
               </p>
               <div className="flex items-center justify-start gap-3 w-full h-fit mt-2">
@@ -101,7 +101,7 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <p>A few projects I've developed over time</p>
+            <p>A few projects I&apos;ve developed over time</p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
               <ProjectCard
                 link="https://github.com/LucasVieiraS/InTune-Tuner"
