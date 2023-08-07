@@ -7,7 +7,8 @@ import Carousel from "@/components/custom/carousel";
 import SocialButton from "@/components/custom/social-button";
 
 import shape from "../../public/blur2.png";
-import lucas from "../../public/peep.png";
+import lucaspeep from "../../public/peep.png";
+import lucas from "../../public/lucas.png";
 
 import {
   RxAvatar,
@@ -69,7 +70,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="relative inline-block">
+            <div className="relative inline-block group">
               <Image
                 priority
                 src={shape}
@@ -78,9 +79,15 @@ export default function Home() {
               />
               <Image
                 priority
+                src={lucaspeep}
+                alt="A picture of Lucas built using openpeeps."
+                className="w-fit h-full group-hover:hidden aspect-square object-contain absolute bottom-0 left-0 m-0 -scale-x-100"
+              />
+              <Image
+                priority
                 src={lucas}
                 alt="A picture of Lucas in 2023."
-                className="w-fit h-full aspect-square object-contain absolute bottom-0 left-0 m-0 -scale-x-100"
+                className="w-fit hidden group-hover:flex h-full aspect-square object-contain absolute bottom-0 left-0 m-0"
               />
             </div>
           </div>
