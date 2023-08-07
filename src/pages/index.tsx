@@ -46,8 +46,8 @@ export default function Home() {
               <p>
                 I&apos;m a full-stack software engineer from São Paulo, Brazil. My
                 technology stack consists of basically{' '}
-                <span className="font-semibold">Java</span>,
-                <span className="font-semibold">Angular</span> and
+                <span className="font-semibold">Java</span>,{' '}
+                <span className="font-semibold">Angular</span> and{' '}
                 <span className="font-semibold">React</span>.
               </p>
               <div className="flex items-center justify-start gap-3 w-full h-fit mt-2">
