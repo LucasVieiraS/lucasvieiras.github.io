@@ -40,12 +40,12 @@ export default function Home() {
             <div className="p-8 md:p-24 pb-18 h-full">
               <h2>Who am I?</h2>
               <p className="prose-xl">
-                My name is
+                My name is{' '}
                 <span className="font-bold">Lucas Vieira da Silva</span>
               </p>
               <p>
                 I&apos;m a full-stack software engineer from São Paulo, Brazil. My
-                technology stack consists of basically
+                technology stack consists of basically{' '}
                 <span className="font-semibold">Java</span>,
                 <span className="font-semibold">Angular</span> and
                 <span className="font-semibold">React</span>.
