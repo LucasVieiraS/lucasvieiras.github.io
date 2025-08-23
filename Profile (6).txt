@@ -1,0 +1,129 @@
+Contact
+(14) 99610-2981 (Mobile)
+lucasvieirasilva.lpta@gmail
+.com
+
+www.linkedin.com/in/
+lucasvieirasilva (LinkedIn)
+github.com/LucasVieiraS (Portfolio)
+
+Top Skills
+AWS Lambda
+CI
+Git
+
+Languages
+English (Full Professional)
+Portuguese (Native or Bilingual)
+
+Certifications
+Oracle Cloud Infrastructure Certified
+Foundations Associate
+
+Lucas Vieira
+
+Software Engineer | Backend | Java | Spring Boot | AWS | Python |
+REST API | CI/CD
+Lençóis Paulista, São Paulo, Brazil
+
+Summary
+Software engineer focused on building scalable, innovative solutions
+that solve real problems.
+Core Skills:
+- Backend systems architecture & distributed computing
+- AI model integration & automation pipelines
+- Cloud infrastructure & DevOps practices
+- Database design & high-performance data processing
+- Production monitoring & system reliability
+Technical diploma in Systems Development.
+Currently studying Computer Science.
+
+Cloud Computing and Artificial
+Intelligence
+AWS Cloud and Generative AI
+Knowledge
+
+Experience
+
+CS50x
+
+Prota Games
+
+Advanced English: CEFR C1
+
+Honors-Awards
+
+1 year 8 months
+
+Software Engineer
+
+July 2025 - Present (2 months)
+
+1st Place – Faça Acontecer
+Challenge
+
+• Built high-throughput data processing pipelines using Python (boto3, asyncio)
+
+Admission Offer – B.Sc. in Computer
+Science
+
+resilience and idempotency patterns.
+
+with AI model integrations, handling large-scale automated workflows with
+
+• Designed scalable distributed systems architecture on AWS using SQS,
+EventBridge, and ECR for asynchronous processing, scaling system capacity
+by 10x+.
+• Architected multi-service backend infrastructure with comprehensive
+observability, implementing error tracking (Sentry), real-time notifications, and
+performance monitoring for concurrent processing tasks.
+
+Page 1 of 3
+
+• Implemented robust CI/CD pipeline with automated testing, containerized
+deployments, and controlled release processes, ensuring system reliability and
+deployment visibility.
+• Enhanced system reliability by implementing custom observability for
+distributed message flows (SQS → EventBridge → ECR), using Lambda and
+CloudWatch metrics to detect and alert on silent failures in real-time
+
+Software Engineer Intern
+
+July 2024 - June 2025 (1 year)
+• Developed an ETL pipeline handling millions of data entries, automating
+extraction, transformation, and loading of YouTube video data into a
+PostgreSQL database on AWS.
+• Integrated Google Play Store and Apple App Store data to track app
+downloads daily in a performance dashboard (Google Looker Studio).
+• Implemented UTM parameter tracking in Firebase, allowing precise
+attribution of app installs by identifying referring YouTube channels.
+• Designed and optimized SQL queries for Google Looker Studio, enhancing
+data visualization for installs by channel and overall performance metrics.
+• Built an integration with the Notion API, extracting YouTube video scripts
+from Google Docs, processing metadata, and storing structured data in a
+centralized database.
+• Developed data pipelines in Docker and used AWS (S3, ECR).
+
+Game Developer Intern
+
+January 2024 - July 2024 (7 months)
+• Engineered client-server solutions using Lua, orchestrating advanced serverclient and inter-server communications with integrated HTTP APIs, analytics,
+and persistent operations that supported 50M+ users.
+• Developed mobile applications in Unity using C#.
+• Integrated in-game analytics tracking, following MVC architecture and using
+the ServiceLocator Pattern.
+
+Page 2 of 3
+
+Education
+UNISAGRADO
+Bachelor in Computer Science, Computer Science · (February
+2024 - December 2028)
+
+ETEC - Escola Técnica Estadual de São Paulo
+High School Diploma, Technical Degree, Systems
+Development · (2021 - 2023)
+
+Page 3 of 3
+
+

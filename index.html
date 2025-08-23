@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Vieira - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="name">Lucas Vieira</h1>
+            <p class="title">Software Engineer | Backend | Java | Spring Boot | AWS | Python | REST API | CI/CD</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">@</span>
+                    <a href="mailto:lucasvieirasilva.lpta@gmail.com" class="contact-link">lucasvieirasilva.lpta@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">&lt;/&gt;</span>
+                    <a href="https://github.com/LucasVieiraS" target="_blank" class="contact-link">github.com/LucasVieiraS</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">in</span>
+                    <a href="https://linkedin.com/in/lucasvieirasilva" target="_blank" class="contact-link">linkedin.com/in/lucasvieirasilva</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">*</span>
+                    <span>Lençóis Paulista, São Paulo, Brazil</span>
+                </div>
+            </div>
+            <button class="download-btn" onclick="downloadResume()">
+                <i class="fas fa-download"></i>
+                Download Resume PDF
+            </button>
+        </header>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2 class="section-title">About</h2>
+            <p class="about-text">
+                Software engineer focused on building scalable, innovative solutions that solve real problems.
+                <br><br>
+                <strong>Core Skills:</strong><br>
+                • Backend systems architecture & distributed computing<br>
+                • AI model integration & automation pipelines<br>
+                • Cloud infrastructure & DevOps practices<br>
+                • Database design & high-performance data processing<br>
+                • Production monitoring & system reliability<br><br>
+                Technical diploma in Systems Development. Currently studying Computer Science.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <div class="item-with-icon">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEoUJsC5pLWGA/company-logo_200_200/company-logo_200_200/0/1719408817626/protagames_logo?e=2147483647&v=beta&t=0zk7xA6mS-Zj3NzqAMG1iCO56ziQlFtZW1hEuxBES8U" alt="Prota Games" class="company-icon">
+                    <div class="item-content">
+                        <div class="job-header">
+                            <h3 class="job-title">Software Engineer</h3>
+                            <span class="job-period">July 2023 - Present</span>
+                        </div>
+                        <p class="company">Prota Games</p>
+                    </div>
+                </div>
+                <ul class="job-description">
+                    <li>Built high-throughput data processing pipelines using Python (boto3, asyncio) with AI model integrations, handling large-scale automated workflows</li>
+                    <li>Designed scalable distributed systems architecture on AWS using SQS, EventBridge, and ECR for asynchronous processing, scaling system capacity by 10x+</li>
+                    <li>Architected multi-service backend infrastructure with comprehensive observability, implementing error tracking (Sentry), real-time notifications, and performance monitoring</li>
+                    <li>Implemented robust CI/CD pipeline with automated testing, containerized deployments, and controlled release processes</li>
+                    <li>Enhanced system reliability by implementing custom observability for distributed message flows using Lambda and CloudWatch metrics</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-with-icon">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEoUJsC5pLWGA/company-logo_200_200/company-logo_200_200/0/1719408817626/protagames_logo?e=2147483647&v=beta&t=0zk7xA6mS-Zj3NzqAMG1iCO56ziQlFtZW1hEuxBES8U" alt="Prota Games" class="company-icon">
+                    <div class="item-content">
+                        <div class="job-header">
+                            <h3 class="job-title">Software Engineer Intern</h3>
+                            <span class="job-period">July 2024 - June 2025</span>
+                        </div>
+                        <p class="company">Prota Games</p>
+                    </div>
+                </div>
+                <ul class="job-description">
+                    <li>Developed an ETL pipeline handling millions of data entries, automating extraction, transformation, and loading of YouTube video data into PostgreSQL database on AWS</li>
+                    <li>Integrated Google Play Store and Apple App Store data to track app downloads daily in a performance dashboard (Google Looker Studio)</li>
+                    <li>Implemented UTM parameter tracking in Firebase, allowing precise attribution of app installs by identifying referring YouTube channels</li>
+                    <li>Built integration with Notion API, extracting YouTube video scripts from Google Docs and processing metadata</li>
+                    <li>Developed data pipelines in Docker and used AWS (S3, ECR)</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-with-icon">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEoUJsC5pLWGA/company-logo_200_200/company-logo_200_200/0/1719408817626/protagames_logo?e=2147483647&v=beta&t=0zk7xA6mS-Zj3NzqAMG1iCO56ziQlFtZW1hEuxBES8U" alt="Prota Games" class="company-icon">
+                    <div class="item-content">
+                        <div class="job-header">
+                            <h3 class="job-title">Game Developer Intern</h3>
+                            <span class="job-period">January 2024 - July 2024</span>
+                        </div>
+                        <p class="company">Prota Games</p>
+                    </div>
+                </div>
+                <ul class="job-description">
+                    <li>Engineered client-server solutions using Lua, orchestrating advanced server-client and inter-server communications with integrated HTTP APIs, analytics, and persistent operations that supported 50M+ users</li>
+                    <li>Developed mobile applications in Unity using C#</li>
+                    <li>Integrated in-game analytics tracking, following MVC architecture and using the ServiceLocator Pattern</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>Lua</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Backend & Frameworks</h4>
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>REST APIs</li>
+                        <li>ETL Pipelines</li>
+                        <li>Microservices</li>
+                        <li>Distributed Systems</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & AWS</h4>
+                    <ul>
+                        <li>AWS Lambda</li>
+                        <li>AWS SQS</li>
+                        <li>AWS EventBridge</li>
+                        <li>AWS ECR</li>
+                        <li>AWS S3</li>
+                        <li>CloudWatch</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Databases</h4>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>DevOps & Tools</h4>
+                    <ul>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                        <li>Sentry</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages">
+                <div class="language-item">
+                    <span class="language">Portuguese</span>
+                    <span class="proficiency">Native or Bilingual</span>
+                </div>
+                <div class="language-item">
+                    <span class="language">English</span>
+                    <span class="proficiency">Full Professional (CEFR C1)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="item-with-icon">
+                    <img src="https://unisagrado.edu.br/custom/2008/uploads/unisagrado-page/img/iconeunisagrado.svg" alt="UNISAGRADO" class="company-icon">
+                    <div class="item-content">
+                        <div class="degree-header">
+                            <h3 class="degree">Bachelor in Computer Science</h3>
+                            <span class="education-period">February 2024 - December 2028</span>
+                        </div>
+                        <p class="institution">UNISAGRADO - Universidade do Sagrado Coração</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="item-with-icon">
+                    <img src="https://www.globalbox.com.br/wp-content/uploads/2025/01/etec.png" alt="ETEC" class="company-icon">
+                    <div class="item-content">
+                        <div class="degree-header">
+                            <h3 class="degree">High School Diploma - Technical Degree in Systems Development</h3>
+                            <span class="education-period">2021 - 2023</span>
+                        </div>
+                        <p class="institution">ETEC - Escola Técnica Estadual de São Paulo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section class="section">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="project-item">
+                <div class="item-with-icon">
+                    <img src="https://leadsbridge.com/wp-content/themes/leadsbridge/img/integration-lg-logos/logo1012.png" alt="Oracle" class="company-icon">
+                    <div class="item-content">
+                        <h3 class="project-title">Oracle Cloud Infrastructure Certified Foundations Associate</h3>
+                        <p class="project-description">
+                            Cloud computing certification demonstrating knowledge of Oracle Cloud Infrastructure services and architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <div class="item-with-icon">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGYjmmBCvqLmg/company-logo_200_200/company-logo_200_200/0/1631309789389?e=2147483647&v=beta&t=bVN13LelDgaarAXt7VYdmBiIQDPBrbYgN-ED0mTnED0" alt="CS50" class="company-icon">
+                    <div class="item-content">
+                        <h3 class="project-title">CS50x - Introduction to Computer Science</h3>
+                        <p class="project-description">
+                            Harvard University's introduction to computer science and programming course completion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-with-icon">
+                    <img src="https://www.clipartmax.com/png/small/474-4746382_uw-madison-crest.png" alt="Admission" class="company-icon">
+                    <div class="item-content">
+                        <h3 class="project-title">Admission Offer – B.Sc. in Computer Science</h3>
+                        <p class="project-description">
+                            Academic achievement recognizing excellence in technical education and potential.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
