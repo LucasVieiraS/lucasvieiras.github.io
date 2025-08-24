@@ -1,5 +1,16 @@
-function downloadResume() {
-    alert('Please upload your resume.pdf file to your server and update this function to point to the correct URL.\n\nExample:\nwindow.open("resume.pdf", "_blank");');
+const CONFIG = {
+    RESUME_URL: 'https://lucasvieiras.github.io/resume/Lucas_Vieira_CV.pdf'
+};
+
+function downloadResume() {    
+    const link = document.createElement('a');
+    link.href = CONFIG.RESUME_URL;
+    link.download = 'Lucas_Vieira_CV.pdf';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
