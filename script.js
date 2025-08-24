@@ -1,5 +1,5 @@
 const CONFIG = {
-    RESUME_URL: 'https://lucasvieiras.github.io/resume/Lucas_Vieira_CV.pdf'
+    RESUME_URL: 'https://drive.google.com/file/d/1BQFUU1A4y_HOoDUbbcp7lR8DmlDnFP-6/view?usp=sharing'
 };
 
 function downloadResume() {    
